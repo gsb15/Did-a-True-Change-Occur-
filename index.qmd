@@ -170,11 +170,12 @@ To demonstrate Bayesian updating within a sport science context, we simulated we
 
 The practitioner’s goal is to identify changes in weekly test scores that are outside of normal – i.e. larger than a smallest meaningful change - to plan interventions or suggest changes to weekly training that may help the athlete recover and perform at a higher level. Unfortunately, this goal is complicated by the fact that the true change observed on a given day is the aggregation of the athletes true score plus some amount of error. A plot of the test-to-test differences and the pooled standard deviation between subsequent tests can be observed in Figure 2. 
 
-images/figure2.png{#fig-change}
+
+![Figure 2. Test-To-Test Change Plot.](images/figure2.png){#fig-change}
 
 To add greater context to the visual, we plot the observed peak concentric power for each test along with the rolling 5-test average and rolling 5-test standard deviation (@fig-rolling). The rolling 5-test average and standard deviation were selected as a pragmatic balance for this situation, long enough to reflect meaningful physiological adaptation (2 to 3 weeks), but short enough to remain sensitive to acute changes when testing twice per week.
 
-images/figure3.png{#fig-rolling}
+![Figure 3. Repeated Countermovement Jump Testing of An Individual Athlete Over Time with Rolling Average. The red line depicts the rolling average with the grey shaded area reporting the uncertainty. Blue points with numerical probability represent points above and red points with probability represent below the Smallest Worthwhile Change for Peak Concentric Power from Heishman et al. (2020).](images/figure3.png){#fig-rolling}
 
 ### Obtaining Standard Error of Measurement and Minimal Detectable Change
 
@@ -203,19 +204,19 @@ There are a number of approaches one can use to combine the observed data with t
 
 After calculating the posterior mean and standard error of measurement for each test difference, we plot the results to observe how the prior parameters help weigh the observed values and pull more extreme values closer to the mean (@fig-posterior). The plot reflects the observed changes against a fixed smallest worthwhile change threshold (grey shaded region), which is the value obtained from Heishman and colleagues [@Heishman2020].
 
-images/figure4.png{#fig-posterior}
+![Figure 4. Test-To-Test Changes In Peak Concentric Power. Red dots represent the observed changes. Block dots represent the Bayesian posterior estimates with error bars representing the posterior standard deviation. The grey shaded region represents the Smallest Worthwhile Change for Peak Concentric Power from Heishman et al. (2020).](images/figure4.png){#fig-posterior}
 
 Exploring @fig-posterior, it is clear that many points are within the normal range of the smallest worthwhile change, indicating that a meaningful enough difference from one test to the next has not occurred for the practitioner to be concerned about. However, this plot may be challenging for practitioners because the data are not reflected in the actual units of measurement, but rather differences from test to test. Such a plot prevents a clear observation of trends over time. To aid the practitioner, we recommend a time-series plot, as shown in @fig-timeseries, with the added context of coloring the points when a meaningful change from one test to the next has been observed. Here, we create a simulation for every observation using the Bayesian posterior mean and posterior standard deviation and provide the probability of each change being greater than or less than a threshold of interest, defined as the 5-test rolling standard deviation. When the probability of a positive or negative change exceeds 50%, we flag that point in blue or red, respectively, so that the practitioner can further investigate and gather more information about the athlete's status.
 
-images/figure5.png{#fig-timeseries}
+![Figure 5. Time Series Plot with Bayesian Posterior Simulation to Determine the Probability That a Change is Greater Than (Blue) or Less Than (Red) the Meaningful Threshold (Rolling 5-Test Standard Deviation).](images/figure5.png){#fig-timeseries}
 
 Individual observations can be further emphasized by visualizing a histogram of a Monte Carlo simulation using the posterior mean and standard deviation and the smallest worthwhile change as threshold lines (Appendix). For example, in @fig-distribution we see a full posterior distribution for observation 20. Here, the probability that the change in peak concentric power from test 19 to test 20 was below the threshold of interest (rolling 5-test standard deviation of 233) was 38.3%. The visual is easy for the practitioner to understand because the shaded region reflects the density of the distribution (38.3%) residing below the threshold of interest.
 
-images/figure6.png{#fig-distribution}
+![Figure 6. Bayesian Posterior Distribution of Change in Counter Movement Jump. The red dashed line represents the probability of a true changed occurred.](images/figure6.png){#fig-distribution}
 
 Finally, we can create team-level evaluations for each athlete at each testing occasion (@fig-team), allowing meaningful changes to be easily identified across the entire squad. This information prevents the practitioner from thinking about changes in a binary way and instead facilitates more meaningful discussions about when to intervene in a player's training based on the probability that a true difference has been observed [@West2025]. This decision may be impacted by multiple factors not included in the monitoring process, such as the player's role on the team (starter versus reserve) or timing within the season (early season versus playoffs), where some risks may be more acceptable than others [@West2025]. Ultimately, this approach ensures that the decision-maker has access to the full posterior information from the monitoring tests while acknowledging that other contextual factors should influence the final decision. These methods are designed to ensure that all available information is delivered to the decision-maker so that contextually informed decisions can be made.
 
-images/figure7.png{#fig-team}
+![Figure 7. Changes in Counter Movement Jump Rolling Average Per Individual Athlete by Team. The red dashed lines depict the smallest worthwhile change. The blue points with numerical probability represent points above and red points with probability represent below the individual athlete’s threshold of interested based on the rolling 5-test standard deviation up to but not including this most recent test during the season.](images/figure7.png){#fig-team}
 
 ## Practical Applications
 
