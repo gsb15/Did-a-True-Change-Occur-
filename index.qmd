@@ -54,19 +54,12 @@ keywords:
 
 
 ```{r}
-2
 #| echo: false
-3
 #| warning: false
-4
 #| message: false
-5
- 
-6
-source("R/bayesian_cmj_simulation.R")
-7
-```
 
+source("R/bayesian_cmj_simulation.R")
+```
 
 
 abstract: |
