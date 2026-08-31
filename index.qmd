@@ -55,10 +55,9 @@ Sport scientists require methodological approaches that can identify individuali
 
 ### Analytical Considerations
 
-There are multiple statistical considerations when integrating serial testing at the individual level. A list of key definitions are reported in Table 1.
+There are multiple statistical considerations when integrating serial testing at the individual level. Key analytical definitions are reported in @tbl-definitions.
 
-Table: Key Analytical Definitions {#tbl-definitions}
-
+::: {#tbl-definitions tbl-cap="Key Analytical Definitions"}
 | Term | Definition | Example |
 |------|------------|---------|
 | **Observed Score** | An athlete's true measurement plus error.  \\ \(Y_i = n + e_i\) | An athlete's true countermovement jump height is 50 cm; however, due to measurement error, the countermovement jump height is measured at 52 cm. |
@@ -70,6 +69,7 @@ Table: Key Analytical Definitions {#tbl-definitions}
 | **Minimal Difference (MD)** | \\[ MD = SEM \times 1.96 \times \sqrt{2} \\]  \\ *Between two measurements* | Using the SEM example, the SEM from the repeated measurements is 1.33 cm. The minimal difference is \\(1.33 \times 1.96 \times \sqrt{2}\\). The MD is 3.7 cm. |
 | **Bayesian Posterior Mean** | \\[ r \times \text{test difference} + (1-r) \times \text{population mean} \\]  \\ where *r* = prior ICC; test difference = difference between two tests; population mean = prior mean; population variance = prior TEM variance. | A practitioner observes a countermovement jump power test difference of -418. With prior literature showing an ICC of 0.834 and a population mean of 3.79, Bayesian updating yields a posterior mean of -348.6. |
 | **Bayesian Posterior Standard Deviation** | \\[ \sqrt{\frac{r \times \text{population variance}}{1}} \\]  \\ where *r* = prior ICC and population variance is the prior TEM variance. | A practitioner observes a countermovement jump power test difference of -418. With prior literature showing an ICC of 0.834, Bayesian updating yields a posterior standard deviation of 90.6. |
+:::
 
 #### Single Subject Analysis
 
@@ -101,7 +101,21 @@ While application of Bayes' theorem to continuous outcomes, which comprise many 
 
 ### Data Simulation
 
-To demonstrate Bayesian updating within a sport science context, we simulate weekly testing of peak concentric power for an athlete who performs countermovement jump testing twice per week [@Heishman2020]. The athlete completes three countermovement jumps with arm swing during each session, and the average peak concentric power across the three attempts is used for analysis. To better reflect real-world conditions, missing data were introduced for two testing periods. Parameters used to generate the simulation are reported in @tbl-simulation. A visualization of the simulated testing data is provided in @fig-serial-power.
+To demonstrate Bayesian updating within a sport science context, we simulated weekly testing of peak concentric power for an athlete who performed countermovement jump testing twice per week [@Heishman2020]. The athlete completed three countermovement jumps with arm swing during each session, and the average peak concentric power across the three attempts was used for analysis. To better reflect real-world conditions, missing data were introduced for two testing periods. Parameters used to generate the simulation are reported in @tbl-simulation-parameters. A visualization of the simulated testing data is provided in @fig-serial-power.
+
+To demonstrate Bayesian updating within a sport science context, we simulated weekly testing of peak concentric power for an athlete who performed countermovement jump testing twice per week [@Heishman2020]. The athlete completed three countermovement jumps with arm swing during each session, and the average peak concentric power across the three attempts was used for analysis. To better reflect real-world conditions, missing data were introduced for two testing periods. Parameters used to generate the simulation are reported in @tbl-simulation-parameters. A visualization of the simulated testing data is provided in @fig-serial-power.
+
+::: {#tbl-simulation-parameters tbl-cap="Model Parameters for Simulation"}
+
+| Variable | Value |
+|-----------|------:|
+| Number of Tests | 45 |
+| Average Peak Power | 5000 |
+| Weekly Trend | 2 |
+| Seasonal Variation | 100 |
+| Random Noise | 150 |
+
+:::
 
 images/figure1.png{#Serial Measurement of Peak Power.}
 
