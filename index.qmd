@@ -39,7 +39,6 @@ number-sections: true
 ---
 
 ## Introduction
-## Introduction
 
 Professional and collegiate sports represent a high-stakes environment, where winning is critical to improving the financial vitality of the team and ensuring coaches and players retain their jobs. Consequently, the availability of the best players to be their best come game day is of the highest importance [@Ward2018]. This has created an interest in monitoring strategies to assess athletes’ physical readiness and track progress over time in an effort to mitigate injuries or decreases in performance [@Swinton2018; @Weakley2024; @Weakley2021]. These data are used to assist practitioners and coaches in making decisions about the volume and intensity of the upcoming practice week [@Weakley2024]. Often, these measurements are serial in nature, where the athlete is evaluated for longitudinal changes over the course of a competitive season [@Datson2022]. The target of these strategies is commonly directed at exploring whether the athlete has recovered from the most frequent bout of exercise or competition or adapted to the current training [@Harry2024].
 
