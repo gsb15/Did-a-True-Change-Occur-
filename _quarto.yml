@@ -9,7 +9,8 @@ format:
     toc: true
     comments:
       hypothesis: true
-  jasa-pdf: default
 
+  pdf: default
+`
 
 
