@@ -165,12 +165,12 @@ To demonstrate Bayesian updating within a sport science context, we simulated we
 
 :::
 
-images/figure1.png{#Serial Measurement of Peak Power.}
+images/figure1.png{#fig-serial-power}
 
 
 The practitioner’s goal is to identify changes in weekly test scores that are outside of normal – i.e. larger than a smallest meaningful change - to plan interventions or suggest changes to weekly training that may help the athlete recover and perform at a higher level. Unfortunately, this goal is complicated by the fact that the true change observed on a given day is the aggregation of the athletes true score plus some amount of error. A plot of the test-to-test differences and the pooled standard deviation between subsequent tests can be observed in Figure 2. 
 
-images/figure2.png{#Test-to-test change plot.}
+images/figure2.png{#fig-change}
 
 To add greater context to the visual, we plot the observed peak concentric power for each test along with the rolling 5-test average and rolling 5-test standard deviation (@fig-rolling). The rolling 5-test average and standard deviation were selected as a pragmatic balance for this situation, long enough to reflect meaningful physiological adaptation (2 to 3 weeks), but short enough to remain sensitive to acute changes when testing twice per week.
 
