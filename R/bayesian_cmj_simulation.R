@@ -9,9 +9,12 @@
 
 
 #================================================================================================
-# 1. Load Packages
+# 1. Install & Load Packages
 #================================================================================================
 
+install.packages('tidyverse')
+install.packages('ggridges')
+install.packages('zoo')
 
 library(tidyverse)
 library(ggridges)
