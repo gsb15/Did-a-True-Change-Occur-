@@ -1,46 +1,46 @@
 ---
-title: Did a True Change Occur? Improving Analytical Decisions for Serial Performance Testing in Sport
+title: "Did a True Change Occur? Improving Analytical Decisions for Serial Performance Testing in Sport"
 
 author:
   - name: Patrick Ward
     corresponding: false
-   roles:
+    roles:
       - Investigation
       - Software
       - Visualization
       - Manuscript Writing
-      - Manuscript Editing 
+      - Manuscript Editing
       - Final Approval
 
   - name: Scot Morrison
     corresponding: false
-   roles:
+    roles:
       - Investigation
       - Visualization
       - Manuscript Writing
-      - Manuscript Editing 
+      - Manuscript Editing
       - Final Approval
 
   - name: Jonathan Templin
     orcid: 0000-0001-7616-0973
     corresponding: false
-   roles:
+    roles:
       - Investigation
       - Manuscript Writing
-      - Manuscript Editing 
+      - Manuscript Editing
       - Final Approval
 
   - name: Garrett Bullock
     orcid: 0000-0003-0236-9015
     corresponding: true
     email: garrett.bullock@wfusm.edu
-   roles:
+    roles:
       - Investigation
-      - Project administration
+      - Project Administration
       - Software
       - Visualization
       - Manuscript Writing
-      - Manuscript Editing 
+      - Manuscript Editing
       - Final Approval
 
 keywords:
@@ -50,6 +50,8 @@ keywords:
   - Countermovement jump
   - N-of-1
   - Athlete monitoring
+---
+
 
 ```{r}
 2
