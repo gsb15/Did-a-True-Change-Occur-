@@ -8,11 +8,14 @@ name: Quarto Publish
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
+
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
       R_KEEP_PKG_SOURCE: yes
+
     permissions:
       contents: write
+
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -23,21 +26,24 @@ jobs:
 
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
-          upgrade: 'TRUE'
-          packages:
+          upgrade: "TRUE"
+          packages: |
             any::remotes
             any::rmarkdown
             any::knitr
             any::tidyverse
-          install-quarto: false  # <-- Blocks the duplicate Quarto install
+          install-quarto: false
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
         with:
           tinytex: true
-          
-      -- name: Upload PDF
+
+      - name: Render manuscript
+        run: quarto render index.qmd
+
+      - name: Upload PDF
         uses: actions/upload-artifact@v4
         with:
-        name: manuscript-pdf
-        path: "*.pdf"
+          name: manuscript-pdf
+          path: "**/*.pdf"
