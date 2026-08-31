@@ -4,16 +4,44 @@ title: title: Did a True Change Occur? Improving Analytical Decisions for Serial
 author:
   - name: Patrick Ward
     corresponding: false
+   roles:
+      - Investigation
+      - Software
+      - Visualization
+      - Manuscript Writing
+      - Manuscript Editing 
+      - Final Approval
 
   - name: Scot Morrison
     corresponding: false
+   roles:
+      - Investigation
+      - Visualization
+      - Manuscript Writing
+      - Manuscript Editing 
+      - Final Approval
 
   - name: Jonathan Templin
+    orcid: 0000-0001-7616-0973
     corresponding: false
+   roles:
+      - Investigation
+      - Manuscript Writing
+      - Manuscript Editing 
+      - Final Approval
 
   - name: Garrett Bullock
+    orcid: 0000-0003-0236-9015
     corresponding: true
     email: garrett.bullock@wfusm.edu
+   roles:
+      - Investigation
+      - Project administration
+      - Software
+      - Visualization
+      - Manuscript Writing
+      - Manuscript Editing 
+      - Final Approval
 
 keywords:
   - Bayesian analysis
