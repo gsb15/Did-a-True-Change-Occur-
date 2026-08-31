@@ -165,7 +165,7 @@ To demonstrate Bayesian updating within a sport science context, we simulated we
 
 :::
 
-images/figure1.png{#fig-serial-power}
+![Figure 1. Serial Measurement of Peak Power.](images/figure1.png){#fig-serial-power}
 
 
 The practitioner’s goal is to identify changes in weekly test scores that are outside of normal – i.e. larger than a smallest meaningful change - to plan interventions or suggest changes to weekly training that may help the athlete recover and perform at a higher level. Unfortunately, this goal is complicated by the fact that the true change observed on a given day is the aggregation of the athletes true score plus some amount of error. A plot of the test-to-test differences and the pooled standard deviation between subsequent tests can be observed in Figure 2. 
