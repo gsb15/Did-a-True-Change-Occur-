@@ -50,6 +50,9 @@ keywords:
   - Countermovement jump
   - N-of-1
   - Athlete monitoring
+
+bibliography: references.bib
+
 ---
 
 
@@ -66,13 +69,12 @@ abstract: |
 Monitoring strategies are used to assess athletes’ physical readiness to maximize performance. These data are used to assist practitioners and coaches in making decisions about the volume and intensity of the upcoming training, practice, and competition. Often, these measurements are serial in nature, where the athlete is evaluated for longitudinal changes over the course of a competitive season. The target of these strategies is commonly directed at determining whether the athlete has recovered from the most frequent bout of training or competition or adapted to the current training. Sport scientists seek to identify individualized athlete changes from serial measurements to understand how the athlete is responding to their training and competitive demands to optimize performance. Within this paper, we demonstrate novel individualistic probabilistic Bayesian methods that improve analytical based decisions concerning true athletic changes during serial (i.e., repeated) measures. We then discuss practical examples, providing open access computer code and data, to assist the practitioner in creating future scalable resources.
 
 ...
-plain-language-summary: | Evaluating and understanding if a true change occured from repeated measurments in athletic settings is essential for performance, injury risk assessment, and rehabilitation. We provide practical examples, with adjoining open data and code to help sports scientists in creating practical resources. 
+Plain-Language-Summary: | Evaluating and understanding if a true change occured from repeated measurments in athletic settings is essential for performance, injury risk assessment, and rehabilitation. We provide practical examples, with adjoining open data and code to help sports scientists in creating practical resources. 
   
-key-points:
+Key-points:
   - The paper addresses a common sport science problem: Practitioners routinely collect repeated performance data, such as countermovement jump testing, to monitor athlete readiness, fatigue, recovery, and adaptation. A central challenge is determining whether an observed change reflects a true physiological change or is simply the result of measurement error. 
 
--Traditional threshold-based approaches have limitations: Common approaches for evaluating athlete monitoring data include: 1) Smallest Worthwhile Change (SWC); 2) Typical Error of Measurement (TEM); 
-3) Standard Error of Measurement (SEM); 4) Coefficient of Variation (CV). While these methods are widely used, they often lead to binary conclusions such as "changed" versus "not changed" and do not adequately communicate uncertainty surrounding the observed measurement. 
+-Traditional threshold-based approaches have limitations: Common approaches for evaluating athlete monitoring data include: 1) Smallest Worthwhile Change (SWC); 2) Typical Error of Measurement (TEM); 3) Standard Error of Measurement (SEM); 4) Coefficient of Variation (CV). While these methods are widely used, they often lead to binary conclusions such as "changed" versus "not changed" and do not adequately communicate uncertainty surrounding the observed measurement. 
 
 - The paper advocates for individual-level analysis: Sport performance decisions are ultimately made for individual athletes, yet most statistical methods taught in sport science are designed for group-level inference. The authors therefore advocate for: 1)N-of-1 methods; 2)Single-subject analysis; 3) Idiographic approaches. These methods better align with real-world athlete monitoring, where practitioners are interested in understanding changes within a specific athlete rather than average effects across a group. 
 
@@ -122,8 +124,6 @@ There are multiple statistical considerations when integrating serial testing at
 #### Single Subject Analysis
 
 Single-subject analysis, also known as idiographic or more commonly as N-of-1 methods, utilizes repeated measures from one participant, allowing individualized conclusions about specific tests and interventions [@Beltz2016]. N-of-1 designs are different than case series, as precise conclusions using scientifically rigorous methods are employed [@Bullock2023; @McDonald2020]. N-of-1 approaches have previously been applied in fields such as personalized medicine [@VanDerGreef2006] and psychology [@Woodworth2016], allowing for a generalizable and scalable scientific method. Moreover, such approaches are directly meaningful to the practitioner who often uses published scientific findings coupled with the unique information being observed or reported by the athlete they are working with to build an individualized approach to treatment or training [@Bullock2023]. Incorporating N-of-1 strategies for serial sport testing therefore has the potential to reveal individual athlete-specific changes.
-
-#### Bayesian Versus Frequentist Approaches
 
 #### Bayesian Versus Frequentist Approaches
 
